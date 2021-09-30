@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon_Good</title>
+</head>
+<body>
+
+    <form action="information_pokemon" method="post">
+        <label for="">Buscar Nombre</label>
+        <input type="text" id="nombre" name="nombre" required/>
+        <input type="submit" />
+      </form>
+      <form action="type_pokemons" method="post"> <!-- llamo la action a ejecutar -->
+        <div id="lista">
+          <label
+            >Tipos de pokemon:
+            <select name="t_pokemon" id="t_pokemon">
+              <option value="">Seleccionar </option>
+              <% for(let i=0; i<List_TiposPokemon.length; i++) {%>
+              <option value=<%= List_TiposPokemon[i] %>> <%= List_TiposPokemon[i] %></option>
+              <% }; %>
+            </select>
+          </label>
+          <input type="submit" />
+        </div>
+      </form>
+      <form action="base_experience" method="post">
+        <label for="">Base de experiencia</label>
+        <input type="number" id="min_base" name="min_base" placeholder="Puntos min." required/>
+        <input type="number" id="max_base" name="max_base" placeholder="Puntos max." required/>
+        <input type="submit" />
+      </form>
+
+
+
+
+    
+</body>
+</html>
