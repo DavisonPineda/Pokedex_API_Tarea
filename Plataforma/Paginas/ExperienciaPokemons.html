@@ -9,11 +9,12 @@
   </head>
   <body>
     <div id="tipos_pokemon">
-      <% arreglo.forEach(item => {%>
+      <% Lista_Experiencia.forEach(item => {%>
       <div class="tipos">
         <label> <img src=<%= item.image%> /> </label>
-        <p><%= item.name%></p>
-        <p><%= item.base_experience%></p>
+        <p id="titulos"><%= item.name%></p>
+        <p id="detallespokemon">Experiancia: <%= item.base_experience%></p>
+        <p id="detallespokemon">Tipo: <%= item.types%></p>
       </div>
       <% }) %>
     </div>

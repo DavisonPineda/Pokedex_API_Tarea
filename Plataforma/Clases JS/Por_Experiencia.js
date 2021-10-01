@@ -5,6 +5,6 @@ exports.Buscar_exp = function (req, res) {
     const max = req.body.max_base;
     const data = buscar.Por_Experiencia(min, max);
     res.render('ExperienciaPokemons.html', {
-        arreglo: data
+        Lista_Experiencia: data
     });
 }

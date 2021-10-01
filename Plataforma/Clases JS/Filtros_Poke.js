@@ -39,10 +39,6 @@ exports.Por_Tipos = function (tipo) {
     return data_tipos;
 }
 
-
-
-
-
 exports.Por_Experiencia = function (min, max) {
     let PokemonExperiencia = PokedexDB.filter((item, index) => {
 
